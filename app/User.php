@@ -53,6 +53,12 @@ class User extends Authenticatable
         return $this->belongsToMany(Group::class)->witchTimestamps();
     }
 
+    public function location()
+    {
+        return $this->hasOneTrough(Location::class, Profile::class);
+    }
+
+
 
 
 
