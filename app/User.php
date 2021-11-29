@@ -58,8 +58,25 @@ class User extends Authenticatable
         return $this->hasOneTrough(Location::class, Profile::class);
     }
 
+    public function posts()
+    {
+        return $his->hasMany(Post::class);
+    }
 
+    public function videos()
+    {
+        return $his->hasMany(Video::class);
+    }
 
+    public function comments()
+    {
+        return $his->hasMany(Comment::class);
+    }
+
+    public function image()
+    {
+      return $this->morphOne(Image::class, 'imageable');
+    }
 
 
 
