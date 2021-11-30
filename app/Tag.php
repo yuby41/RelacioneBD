@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
-    public function users()
+    public function posts()
     {
-      return $this->morpheByMany(User::class, 'taggable');
+      return $this->morpheByMany(Post::class, 'taggable');
     }
 
     public function videos()
