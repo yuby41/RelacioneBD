@@ -55,7 +55,7 @@ class User extends Authenticatable
 
     public function location()
     {
-        return $this->hasOneTrough(Location::class, Profile::class);
+        return $this->hasOneThrough(Location::class, Profile::class);
     }
 
     public function posts()
