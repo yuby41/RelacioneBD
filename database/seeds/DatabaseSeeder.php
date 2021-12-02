@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             $profile->location()->save(factory(App\Location::class)->make());
             $user->groups()->attach($this->array(rand(1, 3)));
             $user->image()->save(factory(App\Image::class)->make([
-                'url' => 'https://lorempixel.com/90/90/'
+                'url' => 'https://picsum.photos//90/90/'
             ]));
         });
 

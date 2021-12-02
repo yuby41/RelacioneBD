@@ -60,17 +60,17 @@ class User extends Authenticatable
 
     public function posts()
     {
-        return $his->hasMany(Post::class);
+        return $this->hasMany(Post::class);
     }
 
     public function videos()
     {
-        return $his->hasMany(Video::class);
+        return $this->hasMany(Video::class);
     }
 
     public function comments()
     {
-        return $his->hasMany(Comment::class);
+        return $this->hasMany(Comment::class);
     }
 
     public function image()

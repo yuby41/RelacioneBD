@@ -5,8 +5,8 @@
 use App\Image;
 use Faker\Generator as Faker;
 
-$factory->define(Image::class, function (Faker $faker) {
+$factory->define(PicsumPhotosProvider::class, function (Faker $faker) {
     return [
-        'url' => $faker->imageUrl(1024, 1024)
+        'url' => $faker->imageUrl(640, 480)
     ];
 });
